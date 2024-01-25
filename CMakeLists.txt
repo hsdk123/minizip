@@ -193,7 +193,8 @@ if(MZ_ZLIB)
         set(PC_PRIVATE_LIBS " -lz")
         set(ZLIB_COMPAT ON)
     elseif(MZ_FETCH_LIBS)
-        clone_repo(zlib https://github.com/madler/zlib)
+        #clone_repo(zlib https://github.com/madler/zlib)
+        clone_repo(zlib https://github.com/hsdk123/zlib)
 
         # Don't automatically add all targets to the solution
         add_subdirectory(${ZLIB_SOURCE_DIR} ${ZLIB_BINARY_DIR} EXCLUDE_FROM_ALL)
