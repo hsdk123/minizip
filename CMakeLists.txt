@@ -365,7 +365,7 @@ if(MZ_ZSTD)
     elseif(MZ_FETCH_LIBS)
         set(ZSTD_BUILD_PROGRAMS OFF CACHE BOOL "Build zstd programs")
 
-        set(ZSTD_TAG dev CACHE STRING) # hs: due to repo update
+        set(ZSTD_TAG dev CACHE STRING "zstd repo tag") # hs: due to repo update
         clone_repo(zstd https://github.com/facebook/zstd)
 
         # Don't automatically add all targets to the solution
